@@ -34,7 +34,7 @@ print(f"Enemy Name: {enemy_shawn.race}")
 print(f"Enemy Name: {enemy_shawn.dmg}")
 print(f"Enemy Name: {enemy_shawn.health}")
 
-def select():
+def selectplayer():
     selection = int(input('Choose a character 1-4: '))
     if selection == 1:
         current = player_list[0].name
@@ -51,4 +51,24 @@ def select():
     if selection == 4:
         current = player_list[3].name
         print(current)
-select()
+selectplayer()
+
+def selectweapon():
+    selection = int(input('Choose a weapon 1-4: '))
+    if selection == 1:
+        current = weapon_list[0].name
+        print(current)
+
+    if selection == 2:
+        current = weapon_list[1].name
+        print(current)
+
+    if selection == 3:
+        current = weapon_list[2].name
+        print(current)
+
+    if selection == 4:
+        current = weapon_list[3].name
+        print(current)
+selectweapon()
+
